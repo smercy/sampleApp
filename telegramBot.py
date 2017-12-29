@@ -19,6 +19,8 @@ def action(msg):
         telegram_bot.sendPhoto (chat_id, photo = "http://www.spiritanimal.info/wp-content/uploads/Lion-Spirit-Animal-1.jpg")
     elif command == '/file':
         telegram_bot.sendDocument(chat_id, document=open('/home/pi/picode/sampleApp/README.MD'))
+    elif command == '/photo':
+        telegram_bot.sendPhoto (chat_id, photo = open("/home/pi/picode/huracan.png")
     #elif command == '/audio':
     #    telegram_bot.sendAudio(chat_id, audio=open('/home/pi/test.mp3'))
 
